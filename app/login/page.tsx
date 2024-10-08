@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
 
-import "./globals.css";
-import WelcomeMessage from "./login/WelcomeMessage";
-import Form from "./login/Form";
+import "../globals.css";
+import WelcomeMessage from "./WelcomeMessage";
+import Form from "./Form";
+
 export default function LoginPage() {
   const [loggedIn, setLoggedIn] = useState(false);
 
