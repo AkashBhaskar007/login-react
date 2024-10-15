@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./globals.css";
 import WelcomeMessage from "./login/WelcomeMessage";
 import Form from "./login/Form";
+import App from "./navbar";
 export default function LoginPage() {
   const [loggedIn, setLoggedIn] = useState(false);
 
@@ -14,7 +15,7 @@ export default function LoginPage() {
       <div className="logo">
         <img src="/favicon.ico" alt="LemonPie" />{" "}
       </div>
-      {loggedIn ? <WelcomeMessage /> : <Form setLoggedIn={setLoggedIn} />}
+      {loggedIn ? <App /> : <Form setLoggedIn={setLoggedIn} />}
     </div>
   );
 }
